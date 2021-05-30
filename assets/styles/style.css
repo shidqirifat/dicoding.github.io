@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 { 
+  color: #00a2c6;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+header {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  margin: auto;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main  {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+article p {
+  text-align: justify;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  /* menyesuaikan lebar dan panjang dengan mempertahankan kualitas rasio aslinya.
+  terdapat area gambar yang terpotong atau tidak ditampilkan, 
+  tetapi tampilan gambar akan tetap proporsional. */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+}
+
+img.profile {
+  width: 200px;
+}
+
+figure {
+  margin: auto;
+}
+
+.profil header {
+  text-align: center;
+}
+
+/* Untuk mobile web yg memiliki layar berukuran max 1000px */
+@media screen and (max-width: 1000px) {
+  #content, aside, table {
+      width: 100%;
+      padding: 0;
+      margin: auto;
+  }
+
+  
+}
+
+/* ini merupakan komentar satu baris */
+ 
+/* CSS juga mendukung komentar lebih dari satu baris,
+  seluruh teks yang berada pada pembuka dan penutup sebuah komentar
+  akan diabaikan oleh browser sebagai compiler.
+*/
